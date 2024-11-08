@@ -1,0 +1,120 @@
+/* src/styles.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.1rem;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+h1 {
+  font-size: 2rem;
+  color: #f4f4f9;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+input, button {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input {
+  background: rgba(255, 255, 255, 0.2);
+  color: #f4f4f9;
+  outline: none;
+}
+
+input:focus {
+  border: 2px solid #4f9da6;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+button {
+  background: #4f9da6;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #3b8288;
+}
+
+.item-list {
+  margin-top: 2rem;
+}
+
+.item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  transition: background 0.3s ease;
+}
+
+.item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.item-buttons button {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+}
+
+.edit-btn {
+  background: #ffd56b;
+  color: #333333;
+}
+
+.edit-btn:hover {
+  background: #ffbf3b;
+}
+
+.delete-btn {
+  background: #e94560;
+  color: #ffffff;
+}
+
+.delete-btn:hover {
+  background: #d9374c;
+}
